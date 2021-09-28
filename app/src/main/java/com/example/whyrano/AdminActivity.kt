@@ -2,20 +2,25 @@ package com.example.whyrano
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import androidx.core.view.GravityCompat
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_admin.*
+import com.example.whyrano.databinding.ActivityAdminBinding
 
 class AdminActivity : AppCompatActivity() {
-
     private var dataList = ArrayList<Deliverly>()
+    private lateinit var binding : ActivityAdminBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin)
+
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_admin)
+
+        val toolbar = binding.toolbar
+        val navigationMenu = binding.navigationMenu
+        val navigation_layout = binding.navigationLayout
 
         setSupportActionBar(toolbar)
         val actionBar = supportActionBar!!
@@ -68,6 +73,9 @@ class AdminActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
+
+        val navigation_layout = binding.navigationLayout
+
         if (navigation_layout.isDrawerOpen(GravityCompat.START)){
             navigation_layout.closeDrawers()
         }
