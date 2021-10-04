@@ -3,16 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/activity_loading.xml" value="0.5390625" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/drawable/custom_daegaksun.xml" value="0.34270833333333334" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/drawable/custom_input.xml" value="0.5697916666666667" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/drawable/custom_rect.xml" value="0.5697916666666667" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/activity_admin.xml" value="0.3450199203187251" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/activity_loading.xml" value="0.33" />
         <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/activity_map.xml" value="0.5" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/activity_user.xml" value="0.48755832037325036" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/baesonggwanri.xml" value="0.457233368532207" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/fragment_maps.xml" value="0.48278985507246375" />
+        <entry key="..\:/Whyrano/Whyrano/app/src/main/res/layout/recyclerview_child_control_item.xml" value="0.3302083333333333" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5536458333333333" />
+      </ProjectState>
+    </option>
   </component>
 </project>

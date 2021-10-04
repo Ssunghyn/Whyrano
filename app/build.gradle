@@ -31,13 +31,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    dataBinding {
-        enabled = true
+    buildFeatures {
+        dataBinding = true
     }
 }
 
 dependencies {
-
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:26.1.0'   // 리사이클 뷰 (펼치기 접기)
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'com.google.android.material:material:1.4.0' //네비게이션 뷰
     implementation 'androidx.core:core-ktx:1.6.0'

@@ -72,6 +72,7 @@ class AdminActivity : AppCompatActivity() {
 
     }
 
+
     override fun onBackPressed() {
 
         val navigation_layout = binding.navigationLayout
@@ -83,4 +84,5 @@ class AdminActivity : AppCompatActivity() {
             super.onBackPressed()
         }
     }
+
 }

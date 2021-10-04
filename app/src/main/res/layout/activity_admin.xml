@@ -22,10 +22,11 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
+                android:id="@+id/view3"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:background="@color/white"
                 android:layout_marginHorizontal="16dp"
+                android:background="@color/white"
                 app:layout_constraintBottom_toBottomOf="@+id/toolbar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -65,6 +66,7 @@
                 app:srcCompat="@drawable/loding" />
 
             <LinearLayout
+                android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="380dp"
                 android:layout_margin="16dp"
@@ -80,6 +82,7 @@
                     android:layout_height="match_parent"
                     tools:listitem="@layout/recyclerview_child_control_item" />
 
+
             </LinearLayout>
 
             <TextView
@@ -89,7 +92,8 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
-                android:text="배송인 관리"
+                android:text="배송원 관리"
+                android:textStyle="bold"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/userInfoLayout" />
@@ -126,7 +130,7 @@
                     android:layout_marginTop="16dp"
                     android:text="관리자"
                     android:textColor="@color/white"
-                    android:textSize="24dp"
+                    android:textSize="28sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -149,6 +153,171 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="13dp"
+                android:layout_height="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView"
+                app:srcCompat="@drawable/skytriangle" />
+
+            <LinearLayout
+                android:layout_width="443dp"
+                android:layout_height="341dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintVertical_bias="0.622">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="415dp"
+                    android:layout_height="324dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp">
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="58dp"
+                        android:layout_height="48dp"
+                        android:backgroundTint="@color/main_purple"
+                        android:text="수정"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView46"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.909"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/textView45"
+                        app:layout_constraintVertical_bias="1.0">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="319dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/custom_input"
+                        android:backgroundTint="#53BDED"
+                        android:text="더 알아보기"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.634" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="로젠 택배"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView41"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.231"
+                        app:layout_constraintStart_toEndOf="@+id/textView41"
+                        app:layout_constraintTop_toTopOf="@+id/textView41"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="충청남도 천안"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toEndOf="@+id/textView40"
+                        app:layout_constraintTop_toTopOf="@+id/textView40"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="배송원 수"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view5"
+                        app:layout_constraintEnd_toEndOf="@+id/textView41"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView41"
+                        app:layout_constraintTop_toTopOf="@+id/view5"
+                        app:layout_constraintVertical_bias="0.935" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="배송 기업"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view5"
+                        app:layout_constraintEnd_toEndOf="@+id/textView40"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView40"
+                        app:layout_constraintTop_toTopOf="@+id/view5"
+                        app:layout_constraintVertical_bias="0.661" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="현재 담당 지역"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/view5"
+                        app:layout_constraintEnd_toEndOf="@+id/textView39"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView39"
+                        app:layout_constraintTop_toTopOf="@+id/view5"
+                        app:layout_constraintVertical_bias="0.395" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="배송 관리"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.113"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/view5"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4명, OOO, OOO, OOO, OOO"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView42"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.327"
+                        app:layout_constraintStart_toEndOf="@+id/textView42"
+                        app:layout_constraintTop_toTopOf="@+id/textView42"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="4dp"
+                        android:layout_height="140dp"
+                        android:background="@color/main_purple"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.036"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.066" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
