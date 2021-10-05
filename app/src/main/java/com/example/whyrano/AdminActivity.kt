@@ -1,14 +1,22 @@
 package com.example.whyrano
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.core.view.GravityCompat
+import androidx.core.view.MenuCompat
+import androidx.core.view.MenuItemCompat
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.whyrano.databinding.ActivityAdminBinding
+import com.google.android.material.navigation.NavigationView
 
-class AdminActivity : AppCompatActivity() {
+class AdminActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private var dataList = ArrayList<Deliverly>()
     private lateinit var binding : ActivityAdminBinding
 
@@ -28,10 +36,19 @@ class AdminActivity : AppCompatActivity() {
 
         navigationMenu.setOnClickListener {
             navigation_layout.openDrawer(GravityCompat.START)
+
         }
+
+        binding.navigationView.setNavigationItemSelectedListener(this)
 
         recyclerViewSetting()
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.admin_menu,menu)
+        MenuCompat.setGroupDividerEnabled(menu,true)
+        return true
     }
 
     private fun recyclerViewSetting() {
@@ -83,6 +100,37 @@ class AdminActivity : AppCompatActivity() {
         else {
             super.onBackPressed()
         }
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        val navigation_layout = binding.navigationLayout
+        when(item.itemId){
+            R.id.manone -> {
+                Toast.makeText(this,"배송원 1을 클릭하셨습니다.",Toast.LENGTH_SHORT).show()
+                navigation_layout.closeDrawers()
+            }
+            R.id.mantwo -> {
+                Toast.makeText(this,"배송원 2을 클릭하셨습니다.",Toast.LENGTH_SHORT).show()
+                navigation_layout.closeDrawers()
+            }
+            R.id.manthree -> {
+                Toast.makeText(this,"배송원 3을 클릭하셨습니다.",Toast.LENGTH_SHORT).show()
+                navigation_layout.closeDrawers()
+            }
+            R.id.manfour -> {
+                Toast.makeText(this,"배송원 4을 클릭하셨습니다.",Toast.LENGTH_SHORT).show()
+                navigation_layout.closeDrawers()
+            }
+            R.id.adlogout -> {
+                Toast.makeText(this,"로그아웃 되었습니다.",Toast.LENGTH_SHORT).show()
+                val intent = Intent(this,LoginActivity::class.java)
+                startActivity(intent)
+                finish()
+                return false
+            }
+        }
+
+        return false
     }
 
 }

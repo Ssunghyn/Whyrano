@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/man1">
         <item
-            android:id="@+id/one"
-            android:title="배송원 1"/>
+            android:id="@+id/manone"
+            android:title="배송원 1" />
+    </group>
+    <group android:id="@+id/man2">
         <item
-            android:id="@+id/two"
-            android:title="배송원 2"/>
+            android:id="@+id/mantwo"
+            android:title="배송원 2" />
+    </group>
+    <group android:id="@+id/man3">
         <item
-            android:id="@+id/three"
-            android:title="배송원 3"/>
+            android:id="@+id/manthree"
+            android:title="배송원 3" />
+    </group>
+    <group android:id="@+id/man4">
         <item
-            android:id="@+id/four"
-            android:title="배송원 4"/>
+            android:id="@+id/manfour"
+            android:title="배송원 4" />
+    </group>
+    <group android:enabled="false">
+        <item
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+    </group>
+    <group android:id="@+id/logoutGroup">
+    <item
+        android:id="@+id/adlogout"
+        android:title="로그아웃"/>
     </group>
 </menu>

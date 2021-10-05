@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/first">
         <item
             android:id="@+id/one"
-            android:title="1"/>
+            android:title="개인 정보 변경"
+            />
+    </group>
+
+    <group android:id="@+id/second">
         <item
             android:id="@+id/two"
-            android:title="2"/>
+            android:title="배송 정보 확인"/>
+    </group>
+
+    <group android:id="@+id/third">
         <item
             android:id="@+id/three"
-            android:title="3"/>
+            android:title="문의하기"/>
+    </group>
+
+    <group android:enabled="false">
         <item
-            android:id="@+id/four"
-            android:title="4"/>
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+        <item
+            android:title=" "
+            android:checkable="false"/>
+    </group>
+    <group android:id="@+id/logoutGroup">
+        <item
+            android:id="@+id/logout"
+            android:title="로그아웃"/>
     </group>
 </menu>
